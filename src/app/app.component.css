@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+P{
+font-family: "Times New Roman", Times, serif;
+background-color: lightblue;
+}
+#RemainderSection{
+    height:100%;
+    width:100%;
+   
+}

@@ -1,0 +1,53 @@
+#ReminderTabke{
+    display: flex;
+    justify-content: space-around;
+    flex-direction :row;
+    flex-wrap:wrap;
+    overflow:scroll;
+    height: 500px;
+}
+.RemainderBox{
+    display:flex;
+    flex-direction :column;
+    border: 1px solid ;
+    text-align: left;
+    border-radius: 10px;
+    border-color :slategrey;
+    flex-grow: 1;
+    height:180px;    
+    width: 350px;
+    overflow: auto;
+}
+.RemainderBox h4 {
+    font-size: 25px;
+    margin: auto;
+    margin-bottom: 0px;
+    margin-top: 5px;
+
+}
+.dateP {
+    font-size: 14px;
+    margin: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    font-family:Arial, Helvetica, sans-serif
+}
+p{
+    max-height: 50px;
+    overflow: auto;
+}

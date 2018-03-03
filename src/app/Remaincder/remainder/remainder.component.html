@@ -1,0 +1,34 @@
+<!-- all the Tasks from the json file  -->
+<div id=ReminderTabke>
+      <div class="RemainderBox" *ngFor="let post of listOfReminders;let i =index">
+        <h4>{{post.Title}}:</h4>
+        <p class="dateP">{{post.Date}}</p>
+        <p>{{post.Subject}}</p>
+       <button (click)="onClickDelete(i)">delete</button>
+      </div>
+</div>
+<!-- adding the addreminders Section -->
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title">Add Reminder</h1>
+    </div>
+    <div class="modal-body">
+         <div class=Addingboxs>
+         <h1>Title</h1>
+         <input type="text" placeholder="impotda" #HtmlTitle ng-model>
+      </div>
+      <div class=Addingboxs>
+          <h1>Duee Date</h1>
+          <input type="date" placeholder="impotdate" #HtmlDate >
+      </div>
+      <div class=Addingboxs>
+        <h1>Notes:</h1>
+        <textarea name="comment" rows="4" cols="50" #HtmlNotes></textarea>
+    </div>
+    </div>
+    <div class="modal-footer">
+      <button (click)=onClickopenadd(HtmlTitle.value,HtmlNotes.value,HtmlDate.value)>Add Remainder</button>
+    </div>
+  </div><!-- modal-content -->
+</div><!-- modal-dialog -->

@@ -1,5 +1,7 @@
 # Remainder
+first Install Dependencies
 
+npm install
 
 ## Development server
 
